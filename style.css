@@ -1,0 +1,150 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+.background{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(140, 88, 199) ,#580858);
+}
+.circleback{
+    width: 420px;
+    height: 420px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(-90deg,rgb(32, 2, 66) ,#220022);
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 4px #e7e7e7a4;
+}
+
+.circle{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(-180deg, #ddccf5, #e0b5e0);
+    border-radius: 50%;
+    border: 2px solid rgb(177, 177, 177);   
+    z-index: 1;
+    & #number{
+        font-size: 1.2rem;
+        padding: 5px;
+        position: absolute;
+    }
+    & .number1{
+        top: 0px;
+    }
+    & .number2{
+        right: 0;
+    }
+    & .number3{
+        bottom: 0px;
+    }
+    
+    & .number4{
+        left: 0px;
+    }
+    & #punto{
+        position: absolute;
+        width: 10px;
+        height:10px;
+        border-radius: 100%;
+        background-color: rgb(0, 47, 150);
+        box-shadow: 0px 0px 2px #f4a1ff88;
+        z-index: 2;
+    }
+    & .flecha1{
+        transform-origin: center;
+        top: 25px;
+        translate: 850%;
+    }
+    & .flecha2{
+        transform-origin: center;
+        top: 25px;
+        translate: -850%;
+    }
+    & .flecha3{
+        transform-origin: center;
+        bottom: 25px;
+        translate: -850%;
+    }
+    & .flecha4{
+        transform-origin: center;
+        bottom: 25px;
+        translate: 850%;
+    }
+    & .flecha5{
+        transform-origin: center;
+        left: 25px;
+        transform: translate(-0%,850%);
+    }
+    & .flecha6{
+        transform-origin: center;
+        right: 25px;
+        transform: translate(-0%,850%);
+    }
+    & .flecha7{
+        transform-origin: center;
+        top: 25px;
+        right: 35px;
+        transform: translate(-0%,850%);
+    }
+    & .flecha8{
+        transform-origin: center;
+        top: 25px;
+        left: 35px;
+        transform: translate(0%,850%);
+    }
+    .manija{
+        transform-origin: bottom;
+        position: absolute;
+        bottom: 50%;
+    }
+    #agujaH{
+        width: 6px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: rgb(0, 18, 51);
+        z-index: 1;
+    }
+    #agujaM{
+        width: 4px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: rgb(0, 39, 112);
+        z-index: 2;
+    }
+    #agujaS{
+        width: 2px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: rgb(108, 160, 255);
+        z-index: 3;
+    }
+
+    .relojdigital{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        bottom: 55px;
+        width: 120px;
+        height: 35px;
+        border-radius: 10px;
+        background-color: linear-gradient(180deg, #b89ae2, #915691);
+        box-shadow: inset 0px 0px 8px 4px #fafafaa4;
+    }
+    .digital{
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+}
+    
